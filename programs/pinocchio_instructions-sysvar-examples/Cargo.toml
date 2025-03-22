@@ -1,0 +1,11 @@
+[package]
+name = "pinocchio_instructions_sysvar_examples"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+pinocchio = { git = "https://github.com/0xRigel/pinocchio", branch = "feature/instruction-introspection" }
+pinocchio-system = "0.2.2"

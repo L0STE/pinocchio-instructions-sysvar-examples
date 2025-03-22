@@ -1,0 +1,3 @@
+[workspace]
+members = ["programs/*"]
+authors = ["Dean Little <@deanmlittle>", "Leonardo Donatacci <@L0STE>"]
