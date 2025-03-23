@@ -26,7 +26,7 @@ checksum = "2281a8e9e947c480ce0b64e2d6c6349d72890ba5db6503d5568edf96f304cba9"
 [[package]]
 name = "pinocchio"
 version = "0.8.0"
-source = "git+https://github.com/0xRigel/pinocchio?branch=feature/instruction-introspection#92d36d538043fc26e4dcd557c4ffa5f9e0829d5a"
+source = "git+https://github.com/0xRigel/pinocchio?branch=feature/instruction-introspection#c969885d6f1b9ea94b25550385ae325a632fc9ee"
 
 [[package]]
 name = "pinocchio-pubkey"

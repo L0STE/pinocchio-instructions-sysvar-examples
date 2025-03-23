@@ -42,8 +42,7 @@ impl<'a> LoadInstructionAt<'a> {
     pub const DISCRIMINATOR: &'a u8 = &1;
 
     pub fn process(&mut self) -> ProgramResult {
-        let sysvar_instructions_data = &self.accounts.sysvar_instructions.try_borrow_data()?;
-        let instruction = load_instruction_at_checked(0, &sysvar_instructions_data)?;
+        let instruction = load_instruction_at_checked(0, &self.accounts.sysvar_instructions)?;
 
         if instruction.get_program_id() != &pinocchio_system::ID {
             return Err(ProgramError::InvalidInstructionData);
